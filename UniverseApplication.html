@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Universal Weight Converter</title>
+    <style>
+
+        .style{
+           text-align:center;
+           margin-top: 20px;
+        }
+        .submit{
+            height:50px;
+            width:100px;
+        }    
+        .button{
+            background-color:blue;
+            color:white;
+        }
+        .color{
+            color:yellow;
+            font-weight: 60px;
+        }
+        .border{
+            border:4px solid green; 
+        }
+
+
+
+        .bg{
+            height:1000px;
+            width:1370px;
+            background-image:url(https://img.freepik.com/free-photo/ursa-major-ursa-minor-constellations_23-2150028892.jpg?semt=ais_hybrid&w=740);
+            background-size:contain;
+            background-repeat: no-repeat; 
+            margin-top: 15px;
+        }
+        .t{
+            position:relative;
+            left: 250px;
+            bottom:90px;
+            color:yellow;
+        }
+        .im{
+            height:100px;
+            width:100px;
+            margin-top :30px;
+            margin-left:250px;
+            margin-bottom:70px;
+            display:inline-block;
+            border-radius:60px;
+        }
+        .a{
+            display:inline-block;
+        }
+
+    </style>
+</head>
+<body>
+     
+    <div class="bg">
+        <div class="border">
+        <div class="style">
+            <p class="color">To Know about your weight in other planets please</p>
+            <h5 class="color">Enter Your Weight</h5>
+            <input type="text" id="w"><br>
+            <button onclick="getWeight()" class="button">Sumbit</button>
+            <!--<input type="Submit" class="button">-->
+        </div>
+        </div>
+
+        <br><br>
+
+    <div>
+        <div class="border">
+    <div class="a">
+        <img src="https://sos.noaa.gov/ftp_mirror/astronomy/mercury/oct2011/media/thumbnail_big.jpg" class="im">
+        <pre class="t">Mercury:<span id="mer"></span></pre>
+    </div>
+
+    <div class="a">
+        <img src="https://media.wired.com/photos/5e59ad2b79c7100008eb6ae8/master/w_1600%2Cc_limit/photo_space_venus_1_S91-50688.jpg" class="im">
+        <pre class="t">Venus: <span id="ven"></span> </pre>
+    </div>
+
+    <div class="a">
+        <img src="https://assets.science.nasa.gov/dynamicimage/assets/science/psd/mars/resources/detail_files/7/7808_global-color-views-mars-PIA00407-full2.jpg?w=1600&h=1600&fit=clip&crop=faces%2Cfocalpoint" class="im">
+        <pre class="t">Mars: <span id="mar"></span></pre>
+    </div>
+    <br>
+
+    <div class="a">
+        <img src="https://science.nasa.gov/wp-content/uploads/2023/05/jupiter-earth-jpg.webp" class="im">
+        <pre class="t">Jupiter: <span id="jup"></span></pre>
+    </div>
+
+    <div class="a">
+        <img src="https://thumbs.dreamstime.com/b/saturn-planet-isolated-black-elements-image-furnished-nasa-retouched-image-96784021.jpg" class="im">
+        <pre class="t">Saturn: <span id="sat"></span> </pre>
+    </div>
+
+    <div class="a">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/e/ea/Uranus_%28Edited%29.jpg" class="im">
+        <pre class="t">Uranus: <span id="ura"></span></pre>
+    </div>
+    <br>
+
+    <div class="a">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/0/06/Neptune.jpg" class="im">
+        <pre class="t">Neptune: <span id="nep"></span></pre>
+    </div>
+
+    <div class="a">
+        <img src="https://img.freepik.com/premium-photo/detailed-artists-rendering-ganymede-with-dark-silver-orange-areas_899449-420954.jpg" class="im">
+        <pre class="t">Pluto:<span id="plu"></span></pre>
+    </div>
+
+    <div class="a">
+        <img src="https://www.astronomy.com/wp-content/uploads/sites/2/2023/02/Hubblemoon.jpg" class="im">
+        <pre class="t">Moon:<span id="mo"></span></pre>
+    </div>
+    </div>
+    </div>
+    </div>
+    
+
+    <script>
+        function getWeight(){
+            var w=document.getElementById("w").value;
+
+            var mer=0.38*w;
+            document.getElementById("mer").innerHTML=`${mer}`;
+
+            var ven=0.91*w;
+            document.getElementById("ven").innerHTML=`${ven}`;
+
+            var mar=0.37*w;
+            document.getElementById("mar").innerHTML=`${mar}`;
+
+            var jup=0.234*w;
+            document.getElementById("jup").innerHTML=`${jup}`;
+
+            var sat=0.106*w;
+            document.getElementById("sat").innerHTML=`${sat}`;
+
+            var ura=0.92*w;
+            document.getElementById("ura").innerHTML=`${ura}`;
+
+            var nep=0.119*w;
+            document.getElementById("nep").innerHTML=`${nep}`;
+
+            var plu=0.6*w;
+            document.getElementById("plu").innerHTML=`${plu}`;
+
+            var mo=0.07*w;
+            document.getElementById("mo").innerHTML=`${mo}`;
+        }
+    </script>
+</body>
+</html>
